@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Řidičský Průkaz na Motocykl (A, A1, A2) - Autoškola X Praha</title>
+    
+    <meta name="description" content="Získejte řidičský průkaz na motorku v Praze. Nabízíme profesionální výcvik pro skupiny AM, A1, A2 i A na moderních motocyklech.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://autoskolax.cz/motocykl">
+    
+    <!-- External Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- WhatsApp Chat Widget Script -->
+    <script async src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"></script>
+    <script>
+      var wa_btnSetting = {"btnColor":"#41ecc9","ctaText":"WhatsApp chat","cornerRadius":"30","marginBottom":"26","marginLeft":"40","marginRight":"26","btnPosition":"right","whatsAppNumber":"420739278800","welcomeMessage":"","zIndex":999999,"btnColorScheme":"light"};
+    </script>
+
+    <style>
+        /* ===============================================
+           DESIGN SYSTEM & BASE STYLES (2025 MODERN)
+           =============================================== */
+        :root {
+            --primary: #41ecc9;
+            --primary-dark: #2dd4aa;
+            --secondary: #1f2937;
+            --secondary-light: #374151;
+            --text-dark: #111827;
+            --text-light: #f9fafb;
+            --text-muted: #6b7280;
+            --bg-light: #f8fafc;
+            --bg-section: #ffffff;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2.5rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 6rem;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: var(--text-muted); font-size: 16px; overflow-x: hidden; background: var(--bg-section); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        h1, h2, h3, h4, h5, h6 { color: var(--text-dark); font-weight: 700; line-height: 1.3; }
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; }
+        h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+        p { margin-bottom: var(--spacing-md); max-width: 65ch; }
+        a { color: var(--primary); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: var(--primary-dark); }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 var(--spacing-lg); }
+        .section { padding: var(--spacing-3xl) 0; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto var(--spacing-2xl); }
+        .section-subtitle { color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: var(--spacing-md); font-size: 14px; }
+        .btn { display: inline-block; padding: 14px 32px; font-weight: 600; font-size: 15px; border-radius: var(--radius-full); border: 2px solid transparent; cursor: pointer; transition: all 0.3s ease; text-align: center; }
+        .btn-primary { background-color: var(--primary); color: var(--text-dark); }
+        .btn-primary:hover { background-color: var(--primary-dark); color: var(--text-dark); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .btn-outline { background-color: transparent; color: var(--secondary); border-color: var(--border); }
+        .btn-outline:hover { background-color: var(--secondary); color: var(--text-light); border-color: var(--secondary); }
+
+        /* --- Header & Navigation --- */
+        .site-header { position: relative; z-index: 999; border-bottom: 1px solid var(--border); }
+        .header-top-bar { background-color: var(--bg-light); color: var(--text-muted); padding: 0.5rem 0; font-size: 14px; font-weight: 500; border-bottom: 1px solid var(--border); }
+        .header-top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-left, .top-bar-right { display: flex; align-items: center; gap: 1.5rem; }
+        .top-bar-item { display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); text-decoration: none; }
+        .top-bar-item i { color: var(--primary); }
+        .top-bar-socials { display: flex; align-items: center; gap: 1rem; }
+        .top-bar-socials a { color: var(--text-muted); }
+        .navbar { background: #ffffff; padding: 1rem 0; transition: all 0.3s ease; }
+        .navbar.scrolled { position: fixed; top: 0; left: 0; right: 0; padding: 0.75rem 0; box-shadow: var(--shadow-lg); z-index: 1000; border-bottom: none; }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+        .navbar-brand { font-size: 1.5rem; font-weight: 800; color: var(--primary); letter-spacing: -1px; }
+        .navbar-nav { list-style: none; }
+        .nav-link { color: var(--text-muted); font-weight: 500; padding: 0.5rem 1rem; transition: color 0.3s ease; }
+        .nav-link:hover { color: var(--text-dark); }
+        .desktop-nav, .navbar-right { display: none; }
+        .navbar-toggler { display: block; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark); }
+        .navbar-contact-link { display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-weight: 600; font-size: 15px; }
+        .navbar-contact-link i { color: var(--primary); }
+        .navbar-cta { padding: 10px 22px; font-size: 14px; }
+        .nav-item--has-dropdown { position: relative; }
+        .nav-item--has-dropdown > .nav-link::after { content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; font-size: 0.7em; margin-left: 8px; opacity: 0.6; }
+        .dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; background-color: #ffffff; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); list-style: none; padding: 0.5rem 0; margin-top: 10px; min-width: 220px; border: 1px solid var(--border); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.2s ease-in-out; }
+        .nav-item--has-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu li a { display: block; padding: 10px 20px; color: var(--text-dark); font-weight: 500; font-size: 15px; }
+        .dropdown-menu li a:hover { background-color: var(--bg-light); color: var(--primary); }
+        .mobile-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--secondary); z-index: 1001; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: translateX(100%); transition: transform 0.3s ease-in-out; }
+        .mobile-menu.active { transform: translateX(0); }
+        body.no-scroll { overflow: hidden; }
+        .mobile-menu-close { position: absolute; top: var(--spacing-lg); right: var(--spacing-lg); background: transparent; border: none; color: var(--text-light); font-size: 2rem; cursor: pointer; }
+        .mobile-nav-links { list-style: none; padding: 0; text-align: center; }
+        .mobile-nav-links .nav-link { display: block; font-size: 1.5rem; color: var(--text-light); padding: var(--spacing-md) 0; font-weight: 600; }
+        .mobile-menu-cta { margin-top: var(--spacing-xl); font-size: 1.1rem; padding: 14px 32px; }
+
+        /* --- Footer --- */
+        .footer { background: var(--secondary); color: rgba(255, 255, 255, 0.7); padding-top: var(--spacing-3xl); }
+        .footer-grid { display: grid; gap: var(--spacing-2xl); grid-template-columns: 1fr; }
+        .footer-col h5 { color: var(--text-light); margin-bottom: var(--spacing-lg); }
+        .footer a { color: rgba(255, 255, 255, 0.7); display: block; margin-bottom: var(--spacing-sm); }
+        .footer a:hover { color: var(--primary); }
+        .footer-contact-item { display: flex; align-items: flex-start; gap: var(--spacing-md); margin-bottom: var(--spacing-md); }
+        .footer-contact-item i { color: var(--primary); margin-top: 5px; }
+        .footer-map iframe { width: 100%; height: 300px; border-radius: var(--radius-lg); border: 0; }
+        .copyright { padding: var(--spacing-lg) 0; margin-top: var(--spacing-2xl); text-align: center; font-size: 14px; border-top: 1px solid var(--secondary-light); }
+        
+        /* --- Modal Form --- */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(5px); z-index: 1002; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal-content { background: var(--bg-section); padding: var(--spacing-xl); border-radius: var(--radius-lg); width: 90%; max-width: 500px; position: relative; box-shadow: var(--shadow-xl); transform: scale(0.95); transition: transform 0.3s ease; }
+        .modal-overlay.active .modal-content { transform: scale(1); }
+        .modal-close { position: absolute; top: 10px; right: 10px; background: transparent; border: none; font-size: 1.5rem; color: var(--text-muted); cursor: pointer; }
+        .modal-content h3 { margin-bottom: var(--spacing-sm); }
+        .modal-content p { font-size: 15px; margin-bottom: var(--spacing-lg); }
+        .modal-form .form-group { margin-bottom: var(--spacing-md); }
+        .modal-form label { display: block; font-weight: 600; font-size: 14px; margin-bottom: var(--spacing-sm); color: var(--text-dark); }
+        .modal-form input, .modal-form select { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-lg); font-size: 1rem; font-family: 'Inter', sans-serif; }
+        .modal-form button { width: 100%; }
+
+        /* --- Back to Top Button --- */
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: var(--primary); color: var(--text-dark); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: var(--shadow-lg); cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 998; }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--primary-dark); transform: translateY(-3px); }
+
+        /* ===============================================
+           SUB-PAGE STYLES (MOTO - 2025 REDESIGN)
+           =============================================== */
+        .page-hero { background-color: var(--bg-light); text-align: center; padding: var(--spacing-2xl) 0; border-bottom: 1px solid var(--border); }
+        .page-hero h1 { margin-bottom: var(--spacing-sm); }
+        .breadcrumbs { display: flex; justify-content: center; align-items: center; list-style: none; padding: 0; margin: 0; font-size: 15px; }
+        .breadcrumb-item a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb-item a:hover { color: var(--primary); }
+        .breadcrumb-item.active { color: var(--text-dark); font-weight: 500; }
+        .breadcrumb-item + .breadcrumb-item::before { content: '/'; margin: 0 10px; color: var(--border); }
+        
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-xl); }
+        .moto-card { background-color: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-xl); display: flex; flex-direction: column; transition: all 0.3s ease; }
+        .moto-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .moto-card-image { height: 240px; overflow: hidden; border-radius: var(--radius-xl) var(--radius-xl) 0 0; }
+        .moto-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .moto-card:hover .moto-card-image img { transform: scale(1.05); }
+        .moto-card-body { padding: var(--spacing-lg); flex-grow: 1; display: flex; flex-direction: column; }
+        .moto-card-title { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .moto-card-price { font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: var(--spacing-lg); }
+        .moto-card-features { list-style: none; padding: 0; margin: 0 0 var(--spacing-lg) 0; flex-grow: 1; border-top: 1px solid var(--border); padding-top: var(--spacing-lg); }
+        .moto-card-features li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+        .moto-card-features li i { color: var(--primary-dark); margin-top: 5px; font-size: 14px; }
+        .moto-card .btn { margin-top: auto; width: 100%; }
+
+        .info-section { background-color: var(--bg-light); }
+        .info-grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-3xl); align-items: flex-start; }
+        .info-image-wrapper { border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .info-image-wrapper img { width: 100%; height: auto; display: block; }
+        .info-content h2 { margin-bottom: var(--spacing-lg); }
+        .info-content p a { font-weight: 600; border-bottom: 2px solid var(--primary); }
+        .bike-list { list-style: none; padding: 0; margin-top: var(--spacing-xl); }
+        .bike-list li { display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg); }
+        .bike-icon { flex-shrink: 0; width: 50px; height: 50px; background: var(--bg-light); color: var(--text-dark); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: 20px; border: 1px solid var(--border); }
+        .bike-info h5 { margin: 0 0 2px 0; font-size: 1.1rem; }
+        .bike-info span { font-size: 15px; color: var(--text-muted); }
+
+        .partner-section { text-align: center; }
+        .partner-logo img { max-width: 200px; opacity: 0.7; transition: opacity 0.3s ease; margin: 0 auto; }
+        .partner-logo a:hover img { opacity: 1; }
+        .partner-content p { max-width: 50ch; margin: var(--spacing-md) auto 0; }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 991px) { .header-top-bar { display: none; } }
+        @media (min-width: 768px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .info-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (min-width: 992px) {
+            .desktop-nav { display: flex; align-items: center; gap: 0.5rem; }
+            .navbar-right { display: flex; align-items: center; gap: 1.5rem; }
+            .navbar-toggler { display: none; }
+            .info-grid { grid-template-columns: 5fr 4fr; }
+        }
+        @media (min-width: 1024px) {
+            .footer-grid { grid-template-columns: 2fr 1fr 2fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <div class="top-bar-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ringhofferova 115/1, Praha 5</span>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Po-Pá 08:00 - 20:00</span>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <a href="mailto:info@autoskolax.cz" class="top-bar-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@autoskolax.cz</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">AUTOŠKOLA X</a>
+                <ul class="navbar-nav desktop-nav">
+                    <li class="nav-item--has-dropdown">
+                        <a class="nav-link" href="#">Řidičský průkaz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="motocykl.html">A - Motocykly</a></li>
+                            <li><a href="#">B - Automobil</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="cenik.html">Ceník</a></li>
+                    <li><a class="nav-link open-modal-btn" href="#">E-Přihláška</a></li>
+                    <li><a class="nav-link" href="#">Ke stažení</a></li>
+                    <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <a href="tel:+420739278800" class="navbar-contact-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+420 739 278 800</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu-close" aria-label="Zavřít menu"><i class="fas fa-times"></i></button>
+                <ul class="navbar-nav mobile-nav-links">
+                    <li><a class="nav-link" href="motocykl.html">Řidičský průkaz (Moto)</a></li>
+                    <li><a class="nav-link" href="cenik.html">Ceník</a></li>
+                    <li><a class="nav-link open-modal-btn" href="#">E-Přihláška</a></li>
+                    <li><a class="nav-link" href="#">Ke stažení</a></li>
+                    <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
+                <a href="tel:+420739278800" class="btn btn-primary mobile-menu-cta">
+                    <i class="fa fa-phone-alt me-2"></i> Zavolat nám
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumbs">
+                        <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Motocykly</li>
+                    </ol>
+                </nav>
+                <h1>Řidičák na motorku</h1>
+                <p style="max-width: 60ch; margin: 0 auto;">Nabízíme profesionální výcvik pro všechny kategorie motocyklů. Naučíme vás vše od základů až po sebejisté ovládání stroje v provozu.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Naše kurzy</div>
+                    <h2>Vyberte si svou kategorii</h2>
+                </div>
+                <div class="courses-grid">
+                    <div class="moto-card">
+                        <div class="moto-card-image">
+                            <img src="https://autoskolax.cz/img/AUTOSKOLA_X_MOTO_125.jpg" alt="Motocykl Honda CBF 125">
+                        </div>
+                        <div class="moto-card-body">
+                            <h3 class="moto-card-title">AM / A1</h3>
+                            <p class="moto-card-price">24 900,- Kč</p>
+                            <ul class="moto-card-features">
+                                <li><i class="fas fa-check"></i><strong>AM od 15 let</strong> (do 50 ccm)</li>
+                                <li><i class="fas fa-check"></i><strong>A1 od 16 let</strong> (do 125 ccm)</li>
+                                <li><i class="fas fa-check"></i>Pojištění motocyklu v ceně</li>
+                            </ul>
+                            <button class="btn btn-primary open-modal-btn">Chci tento kurz</button>
+                        </div>
+                    </div>
+                    <div class="moto-card">
+                        <div class="moto-card-image">
+                            <img src="https://autoskolax.cz/img/AUTOSKOLA_X_MOTO_501.jpg" alt="Motocykl Suzuki GS500">
+                        </div>
+                        <div class="moto-card-body">
+                            <h3 class="moto-card-title">A2</h3>
+                            <p class="moto-card-price">24 900,- Kč</p>
+                            <ul class="moto-card-features">
+                                <li><i class="fas fa-check"></i><strong>Od 18 let</strong> (výkon do 35kW)</li>
+                                <li><i class="fas fa-check"></i>Ideální pro pokročilejší začátečníky</li>
+                                <li><i class="fas fa-check"></i>Pojištění motocyklu v ceně</li>
+                            </ul>
+                            <button class="btn btn-primary open-modal-btn">Chci tento kurz</button>
+                        </div>
+                    </div>
+                    <div class="moto-card">
+                        <div class="moto-card-image">
+                            <img src="https://autoskolax.cz/img/AUTOSKOLA_X_MOTO_600.jpg" alt="Motocykl Honda CB 600 F">
+                        </div>
+                        <div class="moto-card-body">
+                            <h3 class="moto-card-title">A</h3>
+                            <p class="moto-card-price">24 900,- Kč</p>
+                            <ul class="moto-card-features">
+                                <li><i class="fas fa-check"></i><strong>Od 24 let</strong> (neomezený výkon)</li>
+                                <li><i class="fas fa-check"></i>Pro zkušené jezdce</li>
+                                <li><i class="fas fa-check"></i>Pojištění motocyklu v ceně</li>
+                            </ul>
+                            <button class="btn btn-primary open-modal-btn">Chci tento kurz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-content">
+                        <div class="section-subtitle">Naše filozofie</div>
+                        <h2>Kvalitní výcvik s individuálním přístupem</h2>
+                        <p>V naší Autoškole X se zaměřujeme na poskytování kvalitní a bezpečné výuky jízdy na motocyklu. Naše motoškola je ideálním místem pro začátečníky i pokročilé jezdce, kteří chtějí zdokonalit své dovednosti.</p>
+                        <p>Naši instruktoři mají dlouholeté zkušenosti a ke každému studentovi přistupují individuálně. Nabízíme také možnost tréninkových jízd v <a href="https://pitland.cz/" target="_blank">PITLANDU</a>, který je ideálním místem k bezpečnému zdokonalování.</p>
+                    </div>
+                    <div class="info-sidebar">
+                         <h4>Výcvikové motocykly</h4>
+                         <ul class="bike-list">
+                             <li>
+                                 <div class="bike-icon"><i class="fa fa-motorcycle"></i></div>
+                                 <div class="bike-info">
+                                     <h5>Honda CB 125 F</h5>
+                                     <span>Skupiny AM & A1</span>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="bike-icon"><i class="fa fa-motorcycle"></i></div>
+                                 <div class="bike-info">
+                                     <h5>Suzuki GS 500</h5>
+                                     <span>Skupina A2</span>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="bike-icon"><i class="fa fa-motorcycle"></i></div>
+                                 <div class="bike-info">
+                                     <h5>Honda CB 600 F</h5>
+                                     <span>Skupina A</span>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="bike-icon"><i class="fa fa-motorcycle"></i></div>
+                                 <div class="bike-info">
+                                     <h5>Suzuki GSXR 750</h5>
+                                     <span>Skupina A</span>
+                                 </div>
+                             </li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partner-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-subtitle">Náš Partner</div>
+                    <h2>Doporučujeme MotoVšem</h2>
+                    <div class="partner-content">
+                        <p>Každý žák od nás dostane dárkovou tašku od partnera MotoVšem, která obsahuje kuklu, lékárničku a 10% slevový poukaz na první nákup.</p>
+                    </div>
+                </div>
+                <div class="partner-logo">
+                    <a href="https://www.motovsem.cz/" target="_blank" aria-label="Přejít na MotoVšem">
+                        <img src="https://autoskolax.cz/img/FINAL%20LOGO%20MOTOVSEM.png" alt="Logo partnera MotoVšem">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="kontakt" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>O Autoškole X</h5>
+                    <p>Jsme moderní autoškola v Praze na Zličíně. Naším cílem je nejen připravit vás na zkoušky, ale naučit vás řídit bezpečně a s přehledem pro celý život.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Rychlé Odkazy</h5>
+                    <a href="motocykl.html">Kurzy na motorku</a>
+                    <a href="#">Kurzy na auto</a>
+                    <a href="cenik.html">Ceník</a>
+                    <a href="#">E-testy (externí)</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Kontaktujte Nás</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ringhofferova 115/1, Praha 5 - Zličín</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+420739278800">+420 739 278 800</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@autoskolax.cz">info@autoskolax.cz</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.026330962362!2d14.293484977093287!3d50.05598227151978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b953d10116891%3A0x778848493f668f44!2sRinghofferova%201%2C%20155%2021%20Praha%205-T%C5%99ebonice!5e0!3m2!1scs!2scz!4v1721401344607!5m2!1scs!2scz" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Autoškola X. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="applicationModal">
+       <div class="modal-content">
+            <button class="modal-close" aria-label="Zavřít"><i class="fas fa-times"></i></button>
+            <h3>Online Přihláška</h3>
+            <p>Vyplňte prosím své údaje a my se vám co nejdříve ozveme s dalšími kroky.</p>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="name">Celé Jméno</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mailová adresa</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonní číslo</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Mám zájem o kurz</label>
+                    <select id="course" name="course">
+                        <option value="A">Motocykl (A, A1, A2)</option>
+                        <option value="B">Automobil (B)</option>
+                        <option value="Kondicni">Kondiční Jízdy</option>
+                        <option value="Jine">Jiný dotaz</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Odeslat přihlášku</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Zpět nahoru"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Init WhatsApp Widget
+            if (typeof _waEmbed === 'function') {
+                _waEmbed(wa_btnSetting);
+            }
+
+            // --- Navbar Scroll Effect ---
+            const navbar = document.querySelector('.navbar');
+            const siteHeader = document.querySelector('.site-header');
+            if (navbar && siteHeader) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > siteHeader.offsetTop) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // --- Mobile Menu Functionality ---
+            const menuToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuCloseBtn = document.querySelector('.mobile-menu-close');
+            const openMenu = () => { if(mobileMenu) mobileMenu.classList.add('active'); document.body.classList.add('no-scroll'); };
+            const closeMenu = () => { if(mobileMenu) mobileMenu.classList.remove('active'); document.body.classList.remove('no-scroll'); };
+            if (menuToggler) menuToggler.addEventListener('click', openMenu);
+            if (menuCloseBtn) menuCloseBtn.addEventListener('click', closeMenu);
+            document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (link.classList.contains('open-modal-btn')) {
+                        e.preventDefault();
+                        openModal();
+                    }
+                    closeMenu();
+                });
+            });
+
+            // --- Modal Form Functionality ---
+            const modal = document.getElementById('applicationModal');
+            const openModalBtns = document.querySelectorAll('.open-modal-btn');
+            const closeModalBtn = modal?.querySelector('.modal-close');
+            const openModal = () => { if (modal) modal.classList.add('active'); };
+            const closeModal = () => { if (modal) modal.classList.remove('active'); };
+            openModalBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal();
+                });
+            });
+            if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+            if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+            // --- Back to Top Button ---
+            const backToTopButton = document.querySelector(".back-to-top");
+            if(backToTopButton) {
+                window.addEventListener("scroll", () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add("visible");
+                    } else {
+                        backToTopButton.classList.remove("visible");
+                    }
+                });
+                backToTopButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
