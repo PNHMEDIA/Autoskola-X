@@ -239,6 +239,170 @@
             .process-grid-modern::before { display: block; }
             .footer-grid { grid-template-columns: 2fr 1fr 2fr; }
         }
+        /* CTA SECTION - Enhanced */
+.cta {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(65, 236, 201, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(65, 236, 201, 0.08) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-card {
+    background: linear-gradient(135deg, var(--secondary) 0%, #374151 100%);
+    color: var(--text-light);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(65, 236, 201, 0.15) 0%, transparent 60%);
+    z-index: 1;
+}
+
+.cta-card .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-xl);
+}
+
+.cta-content {
+    max-width: 600px;
+}
+
+.cta-card .section-subtitle {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+}
+
+.cta-card h2 {
+    color: var(--text-light);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-card p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 400px;
+}
+
+.cta-buttons .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.cta-buttons .btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--text-dark);
+    border: none;
+    box-shadow: 0 4px 15px rgba(65, 236, 201, 0.4);
+}
+
+.cta-buttons .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(65, 236, 201, 0.6);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+}
+
+.cta-buttons .btn-outline {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.cta-buttons .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .cta-card .container {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cta-content {
+        flex: 1;
+        max-width: none;
+        margin-right: var(--spacing-xl);
+    }
+    
+    .cta-buttons {
+        flex-direction: row;
+        flex-shrink: 0;
+        width: auto;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta-card {
+        padding: var(--spacing-3xl) var(--spacing-2xl);
+    }
+    
+    .cta-buttons .btn {
+        padding: 1.25rem 2.5rem;
+        font-size: 1.1rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -344,7 +508,7 @@
     </div>
 </header>
 
-<main>
+<main><!--
     <section class="section stats">
         <div class="container">
             <div class="stats-grid">
@@ -355,7 +519,7 @@
             </div>
         </div>
     </section>
-
+-->
     <section id="o-nas" class="section">
         <div class="container">
             <div class="content-grid">
@@ -372,7 +536,7 @@
             </div>
         </div>
     </section>
-
+<!--
     <section id="kurzy" class="section bg-light">
         <div class="container">
             <div class="section-header">
@@ -420,7 +584,7 @@
             </div>
         </div>
     </section>
-
+-->
     <section id="process" class="section">
         <div class="container">
             <div class="section-header">
