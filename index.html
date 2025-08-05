@@ -403,13 +403,60 @@
         font-size: 1.1rem;
     }
 }
+/* Add this CSS for a full-width header with extra side padding */
+.site-header .container {
+    max-width: 100%;
+    padding-left: 6rem;  /* Increased padding on the left */
+    padding-right: 6rem; /* Increased padding on the right */
+}
+
+/* Přidá mezeru pod nadpisy v textových blocích */
+.content-text h2 {
+    margin-bottom: 2rem; /* Upravte hodnotu podle potřeby */
+}
+
+/* --- Removes the team card image overlay --- */
+
+.team-card-overlay {
+    /* This creates a gradient from dark at the bottom to transparent at the top */
+    background: linear-gradient(to top, rgba(17, 24, 39, 0.9) 0%, transparent 70%);
+}
+ 
+
+.team-card-name {
+    /* This removes the shadow effect that was for the dark background */
+    text-shadow: none;
+}
+
+/* --- Makes the secondary CTA button more visible --- */
+.cta-buttons .btn-outline {
+    color: white;
+    border: 2px solid white; /* This creates a solid white border */
+    background: transparent;
+}
+
+.cta-buttons .btn-outline:hover {
+    background: white; /* On hover, background becomes white */
+    color: var(--secondary); /* On hover, text becomes dark for contrast */
+}
+
+/* Hides the Elfsight branding link */
+a[href*="elfsight.com"] {
+    display: none !important;
+}
+
+/* --- Removes header padding on small devices --- */
+@media (max-width: 767px) {
+  .site-header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
     </style>
 </head>
 <body>
 
-<a href="tel:+420739278800" class="floating-contact" aria-label="Zavolat">
-    <i class="fas fa-phone"></i>
-</a>
+
 
 <header class="site-header">
     <div class="header-top-bar">
@@ -520,6 +567,10 @@
         </div>
     </section>
 -->
+
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-ea8183b3-3732-4e8f-bc07-b8026c6b9ae8" data-elfsight-app-lazy></div>
     <section id="o-nas" class="section">
         <div class="container">
             <div class="content-grid">
@@ -636,6 +687,8 @@
         </div>
     </section>
 
+    
+
     <section id="tym" class="section team">
         <div class="container">
             <div class="section-header">
@@ -723,7 +776,7 @@
                     </div>
                     <div class="cta-buttons">
                         <a href="e_prihlaska.html" class="btn btn-primary btn-lg">Vyplnit e-Přihlášku</a>
-                        <a href="tel:+420739278800" class="btn btn-outline btn-lg" style="color: white; border-color: rgba(255,255,255,0.5);">Mám dotaz</a>
+                        <a href="tel:+420739278800" class="btn btn-outline btn-lg">Mám dotaz</a>
                     </div>
                 </div>
             </div>
@@ -762,12 +815,7 @@
             </div>
         </div>
         <div class="footer-map" style="margin-top: var(--spacing-2xl);">
-            <iframe 
-                src="https://frame.mapy.cz/zakladni?x=14.29606&y=50.0559786111&z=14&source=firm&id=13751158&widget=1"
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4392.76903756768!2d14.291257097231146!3d50.0560478422531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbf8f60cc068d%3A0x16b5f514bcc53a3!2sAuto%C5%A1kola%20X%2C%20s.r.o.!5e1!3m2!1scs!2scz!4v1754360645095!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <div class="copyright">
@@ -854,6 +902,21 @@
             startAutoplay();
         }
     });
+
+    
 </script>
+
+
+<!-- Start of OpenWidget (www.openwidget.com) code -->
+<script>
+    window.__ow = window.__ow || {};
+    window.__ow.organizationId = "16737539-a77d-4c2d-a6d0-dfb207fe55e1";
+    window.__ow.integration_name = "manual_settings";
+    window.__ow.product_name = "openwidget";   
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+  </script>
+  <noscript>You need to <a href="https://www.openwidget.com/enable-javascript" rel="noopener nofollow">enable JavaScript</a> to use the communication tool powered by <a href="https://www.openwidget.com/" rel="noopener nofollow" target="_blank">OpenWidget</a></noscript>
+  <!-- End of OpenWidget code -->
+  
 </body>
 </html>
