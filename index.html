@@ -200,7 +200,7 @@
         .process-grid-modern::before { content: ''; position: absolute; top: 50px; left: 15%; right: 15%; height: 2px; background-image: linear-gradient(to right, var(--border) 50%, transparent 50%); background-size: 20px 2px; z-index: 0; display: none; }
         
         /* CTA SECTION */
-        .cta { background: var(--bg-light); }
+        .cta { background: var(--bg-section); }
         .cta-card { background-color: var(--secondary); background-image: linear-gradient(45deg, var(--secondary) 0%, var(--secondary-light) 100%); color: var(--text-light); text-align: center; border-radius: var(--radius-xl); padding: var(--spacing-2xl) var(--spacing-lg); box-shadow: var(--shadow-xl); }
         .cta-card h2 { color: var(--text-light); }
         .cta-card .section-subtitle { color: var(--primary); }
@@ -241,7 +241,7 @@
         }
         /* CTA SECTION - Enhanced */
 .cta {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #f1f5f9 100%);
+    background-color: white;
     position: relative;
     overflow: hidden;
 }
@@ -261,6 +261,7 @@
 .cta .container {
     position: relative;
     z-index: 2;
+    
 }
 
 .cta-card {
@@ -452,6 +453,62 @@ a[href*="elfsight.com"] {
     padding-right: 1rem;
   }
 }
+
+/* --- Floating Call Button --- */
+.floating-call-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--primary);
+    color: var(--text-dark);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.floating-call-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+    color: var(--text-dark);
+}
+@media (max-width: 767px) {
+  .site-header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon is a bit larger */
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.floating-whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -486,7 +543,7 @@ a[href*="elfsight.com"] {
             </a>
             <ul class="navbar-nav desktop-nav">
                 <li class="nav-item--has-dropdown">
-                    <a class="nav-link" href="#kurzy">Řidičský průkaz</a>
+                    <a class="nav-link" href="kurzy.html">Řidičský průkaz</a>
                     <ul class="dropdown-menu">
                         <li><a href="motocykl.html">A - Motocykly</a></li>
                         <li><a href="automobil.html">B - Automobil</a></li>
@@ -495,7 +552,7 @@ a[href*="elfsight.com"] {
                     </ul>
                 </li>
                 <li><a href="cenik.html" class="nav-link">Ceník</a></li>
-                <li><a href="e_prihlaska.html" class="nav-link">e-Přihláška</a></li>
+                <li><a href="e-prihlaska.html" class="nav-link">e-Přihláška</a></li>
                 <li><a href="file/Dokumenty.pdf" target="_blank" class="nav-link">Ke stažení</a></li>
                 <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
                 <li><a href="https://etesty2.mdcr.cz/" target="_blank" class="nav-link">e-testy</a></li>
@@ -516,7 +573,7 @@ a[href*="elfsight.com"] {
                 <li><a href="vraceni_RP.html" class="nav-link">Vrácení ŘP</a></li>
                 <li><a href="kondicni_jizdy.html" class="nav-link">Kondiční jízdy</a></li>
                 <li><a href="cenik.html" class="nav-link">Ceník</a></li>
-                <li><a href="e_prihlaska.html" class="nav-link">e-Přihláška</a></li>
+                <li><a href="e-prihlaska.html" class="nav-link">e-Přihláška</a></li>
                 <li><a href="file/Dokumenty.pdf" target="_blank" class="nav-link">Ke stažení</a></li>
                 <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
                 <li><a href="https://etesty2.mdcr.cz/" target="_blank" class="nav-link">e-testy</a></li>
@@ -545,8 +602,8 @@ a[href*="elfsight.com"] {
     <div class="carousel-caption">
         <h1>Naučíme vás řídit v klidu a bezpečně</h1>
         <div class="hero-buttons">
-            <a href="e_prihlaska.html" class="btn btn-primary btn-lg"><strong>Online Přihláška</strong></a>
-            <a href="#kurzy" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Naše kurzy</a>
+            <a href="e-prihlaska.html" class="btn btn-primary btn-lg"><strong>Online Přihláška</strong></a>
+            <a href="kurzy.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Naše kurzy</a>
         </div>
     </div>
     <div class="carousel-controls">
@@ -569,8 +626,7 @@ a[href*="elfsight.com"] {
 -->
 
 <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-ea8183b3-3732-4e8f-bc07-b8026c6b9ae8" data-elfsight-app-lazy></div>
+
     <section id="o-nas" class="section">
         <div class="container">
             <div class="content-grid">
@@ -689,6 +745,8 @@ a[href*="elfsight.com"] {
 
     
 
+    
+
     <section id="tym" class="section team">
         <div class="container">
             <div class="section-header">
@@ -765,6 +823,8 @@ a[href*="elfsight.com"] {
         </div>
     </section>
 
+    
+
     <section id="prihlaska" class="section cta">
         <div class="container">
             <div class="cta-card">
@@ -775,13 +835,19 @@ a[href*="elfsight.com"] {
                         <p>Nenechte si ujet příležitost. Vyplňte nezávaznou přihlášku online, nebo nám zavolejte a my vám se vším pomůžeme.</p>
                     </div>
                     <div class="cta-buttons">
-                        <a href="e_prihlaska.html" class="btn btn-primary btn-lg">Vyplnit e-Přihlášku</a>
+                        <a href="e-prihlaska.html" class="btn btn-primary btn-lg">Vyplnit e-Přihlášku</a>
                         <a href="tel:+420739278800" class="btn btn-outline btn-lg">Mám dotaz</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-ea8183b3-3732-4e8f-bc07-b8026c6b9ae8" data-elfsight-app-lazy></div>
+        
+
+  
 </main>
 
 <footer id="kontakt" class="footer">
@@ -793,7 +859,7 @@ a[href*="elfsight.com"] {
             </div>
             <div class="footer-col">
                 <h5>Rychlé Odkazy</h5>
-                <a href="#kurzy">Přehled Kurzů</a>
+                <a href="kurzy.html">Přehled Kurzů</a>
                 <a href="#tym">Náš Tým</a>
                 <a href="#prihlaska">Online Přihláška</a>
                 <a href="https://etesty2.mdcr.cz/" target="_blank">e-Testy (externí)</a>
@@ -907,16 +973,10 @@ a[href*="elfsight.com"] {
 </script>
 
 
-<!-- Start of OpenWidget (www.openwidget.com) code -->
-<script>
-    window.__ow = window.__ow || {};
-    window.__ow.organizationId = "16737539-a77d-4c2d-a6d0-dfb207fe55e1";
-    window.__ow.integration_name = "manual_settings";
-    window.__ow.product_name = "openwidget";   
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
-  </script>
-  <noscript>You need to <a href="https://www.openwidget.com/enable-javascript" rel="noopener nofollow">enable JavaScript</a> to use the communication tool powered by <a href="https://www.openwidget.com/" rel="noopener nofollow" target="_blank">OpenWidget</a></noscript>
-  <!-- End of OpenWidget code -->
-  
+<!-- Floating Call Button -->
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/420739278800" class="floating-whatsapp-btn" aria-label="Napište nám na WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>

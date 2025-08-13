@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceník Kurzů a Služeb - Autoškola X Praha</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ceník Kurzů a Jízd | Autoškola X Praha</title>
+        
+        <meta name="description" content="Přehledný ceník kurzů pro řidičský průkaz na auto (B) a motorku (A) i kondičních jízd. Transparentní ceny bez skrytých poplatků v Praze na Zličíně.">
+        <meta name="keywords" content="ceník autoškola praha, cena řidičáku, kolik stojí řidičák B, cena řidičáku na motorku, autoškola praha cena, autoškola zličín ceník">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://autoskolax.cz/cenik.html">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://autoskolax.cz/cenik.html">
+        <meta property="og:title" content="Ceník Kurzů a Jízd | Autoškola X Praha">
+        <meta property="og:description" content="Přehledný ceník kurzů pro řidičský průkaz na auto (B) a motorku (A) i kondičních jízd. Transparentní ceny bez skrytých poplatků.">
+        <meta property="og:image" content="https://autoskolax.cz/img/AUTOSKOLA_X.jpg">
     
-    <meta name="description" content="Kompletní a transparentní ceník pro řidičské průkazy na auto, motorku, kondiční jízdy a další služby v Autoškole X Praha.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://autoskolax.cz/cenik">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://autoskolax.cz/cenik.html">
+        <meta property="twitter:title" content="Ceník Kurzů a Jízd | Autoškola X Praha">
+        <meta property="twitter:description" content="Přehledný ceník kurzů pro řidičský průkaz na auto (B) a motorku (A) i kondičních jízd. Transparentní ceny bez skrytých poplatků.">
+        <meta property="twitter:image" content="https://autoskolax.cz/img/AUTOSKOLA_X.jpg">
     
-    <!-- External Fonts and Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
+        <!-- Schema.org for a webpage with offers -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Ceník Autoškoly X",
+          "url": "https://autoskolax.cz/cenik.html",
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Řidičský průkaz sk. B - Standard"
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "22900",
+                  "priceCurrency": "CZK"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Řidičský průkaz sk. A - Standard"
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "20900",
+                  "priceCurrency": "CZK"
+                }
+              }
+            ]
+          }
+        }
+        </script>
     <style>
         :root {
             --primary: #41ecc9; --primary-dark: #2dd4aa; --secondary: #1f2937; --secondary-light: #374151; --accent: #f59e0b; --text-dark: #111827; --text-light: #f9fafb; --text-muted: #4b5563; --bg-light: #f8fafc; --bg-section: #ffffff; --border: #e5e7eb; --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05); --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); --radius-md: 8px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px; --spacing-xs: 0.25rem; --spacing-sm: 0.5rem; --spacing-md: 1rem; --spacing-lg: 1.5rem; --spacing-xl: 2.5rem; --spacing-2xl: 4rem; --spacing-3xl: 6rem;
@@ -107,6 +159,43 @@
         @media (min-width: 1024px) {
             .footer-grid { grid-template-columns: 2fr 1fr 2fr; }
         }
+        
+        .site-header .container {
+    max-width: 100%;
+    padding-left: 6rem;  /* Increased padding on the left */
+    padding-right: 6rem; /* Increased padding on the right */
+}
+
+@media (max-width: 767px) {
+  .site-header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon is a bit larger */
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.floating-whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -139,7 +228,7 @@
                 </a>
                 <ul class="navbar-nav desktop-nav">
                     <li class="nav-item--has-dropdown">
-                        <a class="nav-link" href="index.html#kurzy">Řidičský průkaz</a>
+                        <a class="nav-link" href="kurzy.html">Řidičský průkaz</a>
                         <ul class="dropdown-menu">
                             <li><a href="motocykl.html">A - Motocykly</a></li>
                             <li><a href="automobil.html">B - Automobil</a></li>
@@ -301,7 +390,7 @@
                 </div>
                 <div class="footer-col">
                     <h5>Rychlé Odkazy</h5>
-                    <a href="index.html#kurzy">Přehled Kurzů</a>
+                    <a href="kurzy.html">Přehled Kurzů</a>
                     <a href="index.html#tym">Náš Tým</a>
                     <a href="e-prihlaska.html">Online Přihláška</a>
                     <a href="https://etesty2.mdcr.cz/" target="_blank">e-Testy (externí)</a>
@@ -323,12 +412,7 @@
                 </div>
             </div>
             <div class="footer-map" style="margin-top: var(--spacing-2xl);">
-                <iframe 
-                    src="https://frame.mapy.cz/zakladni?x=14.29606&y=50.0559786111&z=14&source=firm&id=13751158&widget=1"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4392.76903756768!2d14.291257097231146!3d50.0560478422531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbf8f60cc068d%3A0x16b5f514bcc53a3!2sAuto%C5%A1kola%20X%2C%20s.r.o.!5e1!3m2!1scs!2scz!4v1754360645095!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="copyright">
@@ -365,5 +449,10 @@
             }
         });
     </script>
+    <!-- Floating Call Button -->
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/420739278800" class="floating-whatsapp-btn" aria-label="Napište nám na WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
-</ht
+</html>
