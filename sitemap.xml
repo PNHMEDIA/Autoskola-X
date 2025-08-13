@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://autoskolax.cz/index.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/kurzy.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/cenik.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/e-prihlaska.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Course Detail Pages -->
+  <url>
+    <loc>https://autoskolax.cz/automobil.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/motocykl.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/kondicni_jizdy.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://autoskolax.cz/vraceni_rp.html</loc>
+    <lastmod>2025-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
