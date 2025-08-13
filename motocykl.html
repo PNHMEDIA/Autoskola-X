@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Řidičský Průkaz na Motocykl (A, A1, A2) - Autoškola X Praha</title>
+    <title>Řidičský Průkaz na Motocykl (A, A2, A1) | Autoškola X Praha</title>
     
-    <meta name="description" content="Získejte řidičský průkaz na motorku v Praze. Nabízíme profesionální výcvik pro skupiny AM, A1, A2 i A na moderních motocyklech.">
+    <meta name="description" content="Získejte řidičák na motorku v Praze. Nabízíme profesionální výcvik pro skupiny A, A2, A1, AM na moderních motocyklech. Začněte jezdit bezpečně.">
+    <meta name="keywords" content="motoškola praha, řidičský průkaz na motorku, řidičák A, řidičák A2, řidičák A1, autoškola motorka praha, výcvik na motocyklu, autoškola zličín">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://autoskolax.cz/motocykl">
+    <link rel="canonical" href="https://autoskolax.cz/motocykl.html">
     
-    <!-- External Fonts and Icons -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://autoskolax.cz/motocykl.html">
+    <meta property="og:title" content="Řidičský Průkaz na Motocykl (A, A2, A1) | Motoškola X Praha">
+    <meta property="og:description" content="Získejte řidičák na motorku v Praze. Nabízíme profesionální výcvik pro skupiny A, A2, A1, AM na moderních motocyklech. Začněte jezdit bezpečně.">
+    <meta property="og:image" content="https://autoskolax.cz/img/AUTOSKOLA_X_3.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://autoskolax.cz/motocykl.html">
+    <meta property="twitter:title" content="Řidičský Průkaz na Motocykl (A, A2, A1) | Motoškola X Praha">
+    <meta property="twitter:description" content="Získejte řidičák na motorku v Praze. Nabízíme profesionální výcvik pro skupiny A, A2, A1, AM na moderních motocyklech. Začněte jezdit bezpečně.">
+    <meta property="twitter:image" content="https://autoskolax.cz/img/AUTOSKOLA_X_3.jpg">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Schema.org for a specific service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Výcvik na motocyklu",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Autoškola X",
+        "url": "https://autoskolax.cz"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Praha"
+      },
+      "description": "Kompletní výcvik pro získání řidičského oprávnění na motocykl skupin A, A2, A1 a AM v Praze. Výuka na moderních strojích s důrazem na bezpečnost.",
+      "name": "Řidičský průkaz na motocykl (Skupina A)",
+      "url": "https://autoskolax.cz/motocykl.html"
+    }
+    </script>
 
     <style>
         :root {
@@ -129,6 +164,67 @@
         @media (min-width: 1024px) {
             .footer-grid { grid-template-columns: 2fr 1fr 2fr; }
         }
+        /* --- Floating Call Button --- */
+.floating-call-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--primary);
+    color: var(--text-dark);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.floating-call-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+    color: var(--text-dark);
+}
+.site-header .container {
+    max-width: 100%;
+    padding-left: 6rem;  /* Increased padding on the left */
+    padding-right: 6rem; /* Increased padding on the right */
+}
+@media (max-width: 767px) {
+  .site-header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* --- Floating WhatsApp Button --- */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon is a bit larger */
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.floating-whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -161,7 +257,7 @@
                 </a>
                 <ul class="navbar-nav desktop-nav">
                     <li class="nav-item--has-dropdown">
-                        <a class="nav-link" href="index.html#kurzy">Řidičský průkaz</a>
+                        <a class="nav-link" href="kurzy.html">Řidičský průkaz</a>
                         <ul class="dropdown-menu">
                             <li><a href="motocykl.html">A - Motocykly</a></li>
                             <li><a href="automobil.html">B - Automobil</a></li>
@@ -332,7 +428,7 @@
                 </div>
                 <div class="footer-col">
                     <h5>Rychlé Odkazy</h5>
-                    <a href="index.html#kurzy">Přehled Kurzů</a>
+                    <a href="kurzy.html">Přehled Kurzů</a>
                     <a href="index.html#tym">Náš Tým</a>
                     <a href="e-prihlaska.html">Online Přihláška</a>
                     <a href="https://etesty2.mdcr.cz/" target="_blank">e-Testy (externí)</a>
@@ -354,12 +450,7 @@
                 </div>
             </div>
             <div class="footer-map" style="margin-top: var(--spacing-2xl);">
-                <iframe 
-                    src="https://frame.mapy.cz/zakladni?x=14.29606&y=50.0559786111&z=14&source=firm&id=13751158&widget=1"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4392.76903756768!2d14.291257097231146!3d50.0560478422531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbf8f60cc068d%3A0x16b5f514bcc53a3!2sAuto%C5%A1kola%20X%2C%20s.r.o.!5e1!3m2!1scs!2scz!4v1754360645095!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="copyright">
@@ -396,5 +487,10 @@
             }
         });
     </script>
+    <!-- Floating Call Button -->
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/420739278800" class="floating-whatsapp-btn" aria-label="Napište nám na WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
-</ht
+</html>
